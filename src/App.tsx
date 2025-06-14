@@ -238,7 +238,7 @@ function App() {
                     style={{
                       left: '50%',
                       top: '50%',
-                    transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
+                      transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
 
                     }}
                     initial={{ opacity: 0, scale: 0 }}
