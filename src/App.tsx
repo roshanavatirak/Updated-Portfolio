@@ -224,43 +224,104 @@ function App() {
               </motion.div>
               
               {/* Floating Icons positioned around the profile image */}
-              {floatingIcons.map((item, index) => {
-                const Icon = item.icon;
-                const angle = (index * (360 / floatingIcons.length)) * (Math.PI / 180);
-                const radius = 200; // Distance from center of profile image
-                const x = Math.cos(angle) * radius;
-                const y = Math.sin(angle) * radius;
-                
-                return (
-                  <motion.div
-                    key={index}
-                    className={`absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 ${item.color} z-20`}
-                    style={{
-                      left: '0%',
-                      top: '50%',
-                      transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-                    }}
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ 
-                      opacity: 1, 
-                      scale: 1,
-                      y: [0, -10, 0],
-                      rotate: [0, 5, 0]
-                    }}
-                    transition={{ 
-                      duration: 4,
-                      delay: item.delay * 0.2,
-                      repeat: Infinity,
-                      repeatType: "reverse"
-                    }}
-                  >
-                    <Icon className="w-6 h-6" />
-                    <span className="text-sm font-medium hidden md:block whitespace-nowrap">
-                      {item.label}
-                    </span>
-                  </motion.div>
-                );
-              })}
+              
+                {/* 1. Top */}
+<motion.div
+  className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-blue-500 z-20"
+  style={{
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(0px, -220px)',
+  }}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
+  transition={{ duration: 4, delay: 0.2, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Code2 className="w-6 h-6" />
+  <span className="text-sm font-medium hidden md:block">SDE</span>
+</motion.div>
+
+{/* 2. Top-Right */}
+<motion.div
+  className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-purple-500 z-20"
+  style={{
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(155px, -155px)',
+  }}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
+  transition={{ duration: 4, delay: 0.4, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Brain className="w-6 h-6" />
+  <span className="text-sm font-medium hidden md:block">Problem Solver</span>
+</motion.div>
+
+{/* 3. Bottom-Right */}
+<motion.div
+  className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-green-500 z-20"
+  style={{
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(155px, 155px)',
+  }}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
+  transition={{ duration: 4, delay: 0.6, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Globe className="w-6 h-6" />
+  <span className="text-sm font-medium hidden md:block">Web Dev</span>
+</motion.div>
+
+{/* 4. Bottom */}
+<motion.div
+  className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-yellow-500 z-20"
+  style={{
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(0px, 220px)',
+  }}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
+  transition={{ duration: 4, delay: 0.8, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Database className="w-6 h-6" />
+  <span className="text-sm font-medium hidden md:block">DSA</span>
+</motion.div>
+
+{/* 5. Bottom-Left */}
+<motion.div
+  className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-red-500 z-20"
+  style={{
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(-155px, 155px)',
+  }}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
+  transition={{ duration: 4, delay: 1.0, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Cpu className="w-6 h-6" />
+  <span className="text-sm font-medium hidden md:block">Tech</span>
+</motion.div>
+
+{/* 6. Top-Left */}
+<motion.div
+  className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-indigo-500 z-20"
+  style={{
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(-155px, -155px)',
+  }}
+  initial={{ opacity: 0, scale: 0 }}
+  animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
+  transition={{ duration: 4, delay: 1.2, repeat: Infinity, repeatType: "reverse" }}
+>
+  <Code className="w-6 h-6" />
+  <span className="text-sm font-medium hidden md:block">Coding</span>
+</motion.div>
+
+              
             </motion.div>
           </div>
         </div>
