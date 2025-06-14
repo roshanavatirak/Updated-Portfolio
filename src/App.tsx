@@ -10,6 +10,7 @@ import { skillCategories } from './data/skills';
 import { projects } from './data/projects';
 import { experiences } from './data/experiences';
 import { certificates } from './data/certificates';
+import Rao from '../../src/assets/Rao.png'
 
 function App() {
   const [activeProject, setActiveProject] = useState(null);
@@ -216,7 +217,7 @@ function App() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500"
+                  src={Rao}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
