@@ -236,10 +236,9 @@ function App() {
                     key={index}
                     className={`absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 ${item.color} z-20`}
                     style={{
-                      left: '50%',
+                      left: '0%',
                       top: '50%',
-                      transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
-
+                      transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
                     }}
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ 
