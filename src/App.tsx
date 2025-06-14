@@ -136,7 +136,7 @@ function App() {
               className="flex-1 max-w-xl md:mt-0 mt-16"
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-                Hi, I'm [Your Name]
+                Hi, I'm <strong>Roshan Avatirak</strong>
               </h1>
               <TypeAnimation
                 sequence={[
@@ -181,7 +181,7 @@ function App() {
               </div>
               <div className="flex gap-4 mt-8">
                 <motion.a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/roshanavatirak"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, rotate: 5 }}
@@ -191,7 +191,7 @@ function App() {
                   <Github className="w-6 h-6" />
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/roshan-avatirak/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, rotate: -5 }}
@@ -246,8 +246,8 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-purple-500 z-20"
   style={{
-    left: '50%',
-    top: '-20%',
+    left: '45%',
+    top: '-5%',
     transform: 'translate(-50%, -50%) translate(155px, -155px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
@@ -965,7 +965,7 @@ function App() {
                 </div>
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/roshan-avatirak/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -1007,11 +1007,11 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 dark:text-gray-300 mb-4 md:mb-0">
-              © {new Date().getFullYear()} [Your Name]. All rights reserved.
+              © {new Date().getFullYear()} <strong>RAO DevStudio</strong>. All rights reserved.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/roshanavatirak"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -1019,7 +1019,7 @@ function App() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://github.com/roshanavatirakhttps://www.linkedin.com/in/roshan-avatirak/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
