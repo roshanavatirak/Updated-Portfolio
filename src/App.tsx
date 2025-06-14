@@ -224,44 +224,44 @@ function App() {
               </motion.div>
               
               {/* Floating Icons positioned around the profile image */}
-             {floatingIcons.map((item, index) => {
-  const Icon = item.icon;
-  const angle = (index * (360 / floatingIcons.length)) * (Math.PI / 180);
-  const radius = 160; // Increased to ensure icons stay outside the profile image
-  const x = Math.cos(angle) * radius;
-  const y = Math.sin(angle) * radius;
+              {floatingIcons.map((item, index) => {
+                const Icon = item.icon;
+                const angle = (index * (360 / floatingIcons.length)) * (Math.PI / 180);
+                const radius = 200; // Distance from center of profile image
+                const x = Math.cos(angle) * radius;
+                const y = Math.sin(angle) * radius;
+                
+                return (
+                  <motion.div
+                    key={index}
+                    className={`absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 ${item.color} z-20`}
+                    style={{
+                      left: '50%',
+                      top: '50%',
+                    transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
 
-  return (
-    <motion.div
-      key={index}
-      className={`absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 ${item.color} z-20`}
-      style={{
-        left: '50%',
-        top: '50%',
-        transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`
-      }}
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ 
-        opacity: 1, 
-        scale: 1,
-        y: [0, -10, 0],
-        rotate: [0, 5, 0]
-      }}
-      transition={{ 
-        duration: 4,
-        delay: item.delay * 0.2,
-        repeat: Infinity,
-        repeatType: "reverse"
-      }}
-    >
-      <Icon className="w-6 h-6" />
-      <span className="text-sm font-medium hidden md:block whitespace-nowrap">
-        {item.label}
-      </span>
-    </motion.div>
-  );
-})}
-
+                    }}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ 
+                      opacity: 1, 
+                      scale: 1,
+                      y: [0, -10, 0],
+                      rotate: [0, 5, 0]
+                    }}
+                    transition={{ 
+                      duration: 4,
+                      delay: item.delay * 0.2,
+                      repeat: Infinity,
+                      repeatType: "reverse"
+                    }}
+                  >
+                    <Icon className="w-6 h-6" />
+                    <span className="text-sm font-medium hidden md:block whitespace-nowrap">
+                      {item.label}
+                    </span>
+                  </motion.div>
+                );
+              })}
             </motion.div>
           </div>
         </div>
