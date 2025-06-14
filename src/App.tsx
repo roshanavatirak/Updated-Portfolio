@@ -10,7 +10,7 @@ import { skillCategories } from './data/skills';
 import { projects } from './data/projects';
 import { experiences } from './data/experiences';
 import { certificates } from './data/certificates';
-import Rao from '../../src/assets/Rao.png'
+import Rao from './assets/Rao.png'
 
 function App() {
   const [activeProject, setActiveProject] = useState(null);
