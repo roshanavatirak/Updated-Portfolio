@@ -227,12 +227,13 @@ function App() {
               {/* Floating Icons positioned around the profile image */}
               
                 {/* 1. Top */}
+{/* 1. Top */}
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-blue-500 z-20"
   style={{
-    left: '0%',
-    top: '0%',
-    transform: 'translate(-50%, -50%) translate(0px, -220px)',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(0px, -200px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -246,9 +247,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-purple-500 z-20"
   style={{
-    left: '35%',
-    top: '-5%',
-    transform: 'translate(-50%, -50%) translate(155px, -155px)',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(140px, -140px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -262,9 +263,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-green-500 z-20"
   style={{
-    left: '85%',
-    top: '0%',
-    transform: 'translate(-50%, -50%) translate(155px, 155px)',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(140px, 140px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -278,9 +279,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-yellow-500 z-20"
   style={{
-    left: '0%',
-    top: '100%',
-    transform: 'translate(-50%, -50%) translate(0px, 220px)',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(0px, 200px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -295,8 +296,8 @@ function App() {
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-red-500 z-20"
   style={{
     left: '50%',
-    top: '100%',
-    transform: 'translate(-50%, -50%) translate(-155px, 155px)',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(-140px, 140px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -310,9 +311,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-indigo-500 z-20"
   style={{
-    left: '85%',
-    top: '85%',
-    transform: 'translate(-50%, -50%) translate(-155px, -155px)',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%) translate(-140px, -140px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -420,7 +421,7 @@ function App() {
               </motion.div>
               <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Problem Solving Excellence</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Passionate about algorithmic thinking and data structures. Solved 900+ problems across multiple platforms 
+                Passionate about algorithmic thinking and data structures. Solved <strong>1000+ problems</strong> across multiple platforms 
                 with a focus on optimized solutions and clean code implementation.
               </p>
             </div>
