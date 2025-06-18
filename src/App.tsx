@@ -227,13 +227,12 @@ function App() {
               {/* Floating Icons positioned around the profile image */}
               
                 {/* 1. Top */}
-{/* 1. Top */}
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-blue-500 z-20"
   style={{
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%) translate(0px, -200px)',
+    left: '0%',
+    top: '0%',
+    transform: 'translate(-50%, -50%) translate(0px, -220px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -247,9 +246,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-purple-500 z-20"
   style={{
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%) translate(140px, -140px)',
+    left: '35%',
+    top: '-5%',
+    transform: 'translate(-50%, -50%) translate(155px, -155px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -263,9 +262,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-green-500 z-20"
   style={{
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%) translate(140px, 140px)',
+    left: '85%',
+    top: '0%',
+    transform: 'translate(-50%, -50%) translate(155px, 155px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -279,9 +278,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-yellow-500 z-20"
   style={{
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%) translate(0px, 200px)',
+    left: '0%',
+    top: '100%',
+    transform: 'translate(-50%, -50%) translate(0px, 220px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -296,8 +295,8 @@ function App() {
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-red-500 z-20"
   style={{
     left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%) translate(-140px, 140px)',
+    top: '100%',
+    transform: 'translate(-50%, -50%) translate(-155px, 155px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
@@ -311,9 +310,9 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-indigo-500 z-20"
   style={{
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%) translate(-140px, -140px)',
+    left: '85%',
+    top: '85%',
+    transform: 'translate(-50%, -50%) translate(-155px, -155px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
   animate={{ opacity: 1, scale: 1, y: [0, -10, 0], rotate: [0, 5, 0] }}
