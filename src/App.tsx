@@ -74,35 +74,35 @@ function App() {
     {
       platform: "LeetCode",
       rating: "1600+",
-      solved: "300+ Problems",
-      url: "https://leetcode.com/yourusername",
+      solved: "450+ Problems",
+      url: "https://leetcode.com/u/roshanavatirak/",
       color: "text-yellow-500",
       bgColor: "bg-yellow-500/10",
       icon: Trophy
     },
     {
       platform: "CodeForces",
-      rating: "1200+",
-      solved: "200+ Problems",
-      url: "https://codeforces.com/profile/yourusername",
+      rating: "1000+",
+      solved: "150+ Problems",
+      url: "https://codeforces.com/profile/roshanavatirak",
       color: "text-red-500",
       bgColor: "bg-red-500/10",
       icon: Code2
     },
     {
       platform: "GeeksForGeeks",
-      rating: "1500+",
+      rating: "1750+",
       solved: "250+ Problems",
-      url: "https://auth.geeksforgeeks.org/user/yourusername",
+      url: "https://www.geeksforgeeks.org/user/roshanavatirak/",
       color: "text-green-500",
       bgColor: "bg-green-500/10",
       icon: Brain
     },
     {
       platform: "CodeChef",
-      rating: "1800+",
+      rating: "1400+",
       solved: "150+ Problems",
-      url: "https://www.codechef.com/users/yourusername",
+      url: "https://www.codechef.com/users/roshanavatirak",
       color: "text-amber-700",
       bgColor: "bg-amber-700/10",
       icon: Trophy
@@ -155,7 +155,7 @@ function App() {
                 className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 mb-6"
               />
               <p className="text-lg mb-8 leading-relaxed">
-                A passionate software developer and third-year Computer Science Engineering student,
+                A passionate software developer and Final-year Computer Science Engineering student,
                 focused on creating impactful solutions through code. I specialize in building
                 responsive web applications with modern technologies.
               </p>
@@ -246,7 +246,7 @@ function App() {
 <motion.div
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-purple-500 z-20"
   style={{
-    left: '45%',
+    left: '35%',
     top: '-5%',
     transform: 'translate(-50%, -50%) translate(155px, -155px)',
   }}
@@ -311,7 +311,7 @@ function App() {
   className="absolute bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg flex items-center gap-2 text-indigo-500 z-20"
   style={{
     left: '85%',
-    top: '100%',
+    top: '85%',
     transform: 'translate(-50%, -50%) translate(-155px, -155px)',
   }}
   initial={{ opacity: 0, scale: 0 }}
@@ -420,7 +420,7 @@ function App() {
               </motion.div>
               <h3 className="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">Problem Solving Excellence</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Passionate about algorithmic thinking and data structures. Solved 800+ problems across multiple platforms 
+                Passionate about algorithmic thinking and data structures. Solved 900+ problems across multiple platforms 
                 with a focus on optimized solutions and clean code implementation.
               </p>
             </div>
@@ -961,7 +961,7 @@ function App() {
                 </div>
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <span className="text-gray-600 dark:text-gray-300">your.email@example.com</span>
+                  <span className="text-gray-600 dark:text-gray-300">roshanavatirak@gmail.com</span>
                 </div>
               </motion.a>
               <motion.a
